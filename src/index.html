@@ -3,12 +3,92 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header id="titulo">
+      <h1 >Card Validation</h1>
+      <br/>
+    </header>
+    
+    <section class="card second-card">
+      <h2>Power Girl</h2>
+      <p>Seleccione la cantidad que desee.</p>
+      <div class="card-img">
+        <img class="card-img" src="img/isolate.png"/>
+      </div>
+
+      <div>
+        <button type="button" id="addition" class="button-operation"> + </button>
+        <button type="button" id="quantity" class="button-operation"> 1 </button>
+        <button type="button" id="subtraction" class="button-operation"> - </button>
+        <p id="amount"> $60.000 </p>
+        <br/>
+        <button type="button" id="start" class="button">Comprar</button>
+      </div>
+    </section>
+
+    <section class="card second-card">
+      <img class="card-img-small" src="img/isolate.png"/>
+      <h3>Power Girl</h3>
+      <h5>1 x $60.000</h5>
+      <hr/>
+      <h4>SubTotal:   $60.000</h4>
+      <button type="button" class="button">Volver</button>
+      <br/>
+      <button type="button" class="button">Finalizar Compra</button>
+    </section>
+
+    <section class="card">
+      <form action="">
+      <h2>Detalles de Pago</h2>
+      <br/>
+
+      <label for="name">Nombre</label>
+      <input class="form" type="text" id="name" name="name" placeholder="Ingrese nombre"/>
+      <br/>
+      <label for="surname">Apellido</label>
+      <input class="form" type="text" id="surname" name="surname" placeholder="Ingrese apellido"/>
+      <br/>
+      <label for="number">Nº Tarjeta</label>
+      <br/>
+      <input class="form-n" type="password" id="number" name="number" placeholder="1er 4 Nº de tarjeta"/>
+      <input class="form-n" type="password" id="number" name="number" placeholder="2do 4 Nº de tarjeta"/>
+      <input class="form-n" type="password" id="number" name="number" placeholder="3er 4 Nº de tarjeta"/>
+      <input class="form-n" type="text" id="number" name="number" placeholder="4to 4 Nº de tarjeta"/>
+      
+      <br/>
+      <label for="name">Fecha de Vencimiento</label>
+      <input class="form" type="expiration" id="expiration" name="expiration" placeholder="MM/YY"/>
+      <br/>
+      <label for="name">CCV</label>
+      <input class="form" type="ccv" id="ccv" name="cvv" placeholder="CCV"/>
+      <br/>
+      <p>Estoy de acuerdo con: <br/> <a href="#">Terminos y Condiciones </a></p>
+      
+        <button type="button" id="pay-btn" class="button">Pagar</button>
+      
+      
+      </form>
+     </section>
+
+    <section class="card">
+      <p>Tarjeta Valida, su compra fue exitosa</p>
+
+      <p>Tarjeta Invalida</p>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <a href="#titulo"> Ir al comienzo</a>
+        <a href="mailto:rossyesmeral@gmail.com">Contáctanos</a>
+      </div>
+      <p>Copyright 2022 ♥ Laboratoria</p>
+    </footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
