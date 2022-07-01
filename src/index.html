@@ -14,8 +14,8 @@
       <br/>
     </header>
     
-    <section class="card second-card">
-      <h2>Power Girl</h2>
+    <section id="card1" class="card">
+      <h2>Girl Power</h2>
       <p>Seleccione la cantidad que desee.</p>
       <div class="card-img">
         <img class="card-img" src="img/isolate.png"/>
@@ -25,15 +25,15 @@
         <button type="button" id="addition" class="button-operation"> + </button>
         <button type="button" id="quantity" class="button-operation"> 1 </button>
         <button type="button" id="subtraction" class="button-operation"> - </button>
-        <p id="amount"> $60.000 </p>
+        <p> $ <span id="amount">600</span></p>
         <br/>
-        <button type="button" id="start" class="button">Comprar</button>
+        <button type="button" id="buy" class="button">Comprar</button>
       </div>
     </section>
 
-    <section class="card second-card">
+    <section id="card2" class="card hide">
       <img class="card-img-small" src="img/isolate.png"/>
-      <h3>Power Girl</h3>
+      <h3>Girl Power</h3>
       <h5>1 x $60.000</h5>
       <hr/>
       <h4>SubTotal:   $60.000</h4>
@@ -42,7 +42,7 @@
       <button type="button" class="button">Finalizar Compra</button>
     </section>
 
-    <section class="card">
+    <section id="card3" class="card hide">
       <form action="">
       <h2>Detalles de Pago</h2>
       <br/>
@@ -55,10 +55,7 @@
       <br/>
       <label for="number">Nº Tarjeta</label>
       <br/>
-      <input class="form-n" type="password" id="number" name="number" placeholder="1er 4 Nº de tarjeta"/>
-      <input class="form-n" type="password" id="number" name="number" placeholder="2do 4 Nº de tarjeta"/>
-      <input class="form-n" type="password" id="number" name="number" placeholder="3er 4 Nº de tarjeta"/>
-      <input class="form-n" type="text" id="number" name="number" placeholder="4to 4 Nº de tarjeta"/>
+      <input class="form" type="text" id="number" name="number" placeholder="Ingrese Nº de tarjeta"/>
       
       <br/>
       <label for="name">Fecha de Vencimiento</label>
@@ -75,7 +72,7 @@
       </form>
      </section>
 
-    <section class="card">
+    <section id="card4" class="card hide">
       <p>Tarjeta Valida, su compra fue exitosa</p>
 
       <p>Tarjeta Invalida</p>
