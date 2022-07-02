@@ -5,6 +5,10 @@ html{
 body{
     margin: 0;
     background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
 }
 
 header {
@@ -123,6 +127,8 @@ form a:hover {
     background-color: #222;
     padding: 3rem;
     color: #fff;
+    margin-top: auto;
+
 }
 
 footer div {
