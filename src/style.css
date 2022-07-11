@@ -1,14 +1,14 @@
-html{
+html {
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
     margin: 0;
     background-color: #efefef;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+
 }
 
 header {
@@ -33,7 +33,7 @@ header h1{
     padding: 2px 16px;
     border-radius: 0.5rem;
     text-align: center;
-    
+
 }
 
 .card:hover {
@@ -57,7 +57,7 @@ header h1{
     height: 100px;
     margin-top: 20px;
     border-radius: 2px 2px 0 0;
-    
+
 }
 
 section h2, section p, section h4 {
@@ -65,7 +65,7 @@ section h2, section p, section h4 {
 }
 
 section h3 {
-  
+
     text-align: center;
 }
 
@@ -77,7 +77,7 @@ section h3 {
     padding: 5px;
     color: rgb(255, 240, 252);
     text-align: center;
-    
+
 }
 
 .button-operation {
@@ -96,6 +96,21 @@ section h3 {
     padding: 12px;
     margin: 16px 0;
     font-size: 16px;
+}
+
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.error-message {
+  color: red;
+  font-size: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  height: 12px;
 }
 
 .form{

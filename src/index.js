@@ -1,7 +1,5 @@
 import validator from './validator.js';
 
-console.log(validator.maskify('4564 6022 0251 7697'));
-
 const addition = document.getElementById('addition');
 const subtraction = document.getElementById('subtraction');
 const quantity = document.getElementById('quantity');
@@ -19,6 +17,8 @@ const toggleCreditCard = document.getElementById('toggleCreditCard');
 let isToggle = false;
 const creditCardNumber = document.getElementById('creditCard');
 let cardNumber = '';
+const errorCard = document.getElementById('error-card');
+
 
 
 
@@ -28,7 +28,9 @@ buyBtn.addEventListener('click', buy);
 backBtn.addEventListener('click', back);
 finalizeBtn.addEventListener('click', finalize);
 payBtn.addEventListener('click', pay);
+creditCardNumber.addEventListener('blur', validateCard);
 toggleCreditCard.addEventListener('click', toggleCredit);
+creditCardNumber.addEventListener('input', cardReplace);
 
 
 function addQuantity() {
@@ -78,6 +80,7 @@ function pay() {
 }
 
 function toggleCredit() {
+  console.log(creditCardNumber.value);
     if (!isToggle) {
       cardNumber = creditCardNumber.value;
     }
@@ -89,6 +92,26 @@ function toggleCredit() {
     }
 
   creditCardNumber.value = cardNumber;
+
+}
+
+function validateCard() {
+  const creditCard = cardNumber === '' ? creditCardNumber.value : cardNumber;
+  const validationCreditCard = validator.isValid(creditCard);
+  if (!validationCreditCard) {
+    payBtn.disabled = true;
+    errorCard.classList.remove('hide');
+    return;
+  }
+  errorCard.classList.add('hide')
+  payBtn.disabled = false;
+}
+
+function cardReplace() {
+    const creditCard = creditCardNumber.value;
+    cardNumber = creditCard.replace(/[^\d]/g, '');
+    const nums = creditCard.replace(/[^\d.#]/g, '');
+    creditCardNumber.value = nums;
 
 }
 

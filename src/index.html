@@ -57,12 +57,13 @@
       <br/>
       <input class="form" type="text" id="creditCard" name="number" placeholder="Ingrese Nº de tarjeta"/>
         <i class="far fa-eye" id="toggleCreditCard" style="margin-left: -30px; cursor: pointer;"></i>
+        <p id="error-card" class="error-message hide">Tarjeta de crédito inválida</p>
       <br/>
       <label for="name">Fecha de Vencimiento</label>
-      <input class="form" type="expiration" id="expiration" name="expiration" placeholder="MM/YY"/>
+      <input class="form" type="text" id="expiration" name="expiration" placeholder="MM/YY"/>
       <br/>
       <label for="name">CCV</label>
-      <input class="form" type="ccv" id="ccv" name="cvv" placeholder="CCV"/>
+      <input class="form" type="text" id="ccv" name="cvv" placeholder="CCV"/>
       <br/>
       <p>Estoy de acuerdo con: <br/> <a href="#">Terminos y Condiciones </a></p>
 
@@ -75,7 +76,6 @@
     <section id="card4" class="card hide">
       <p>Tarjeta Valida, su compra fue exitosa</p>
 
-      <p>Tarjeta Invalida</p>
     </section>
 
     <footer class="footer">
