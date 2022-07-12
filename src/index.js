@@ -80,7 +80,6 @@ function pay() {
 }
 
 function toggleCredit() {
-  console.log(creditCardNumber.value);
     if (!isToggle) {
       cardNumber = creditCardNumber.value;
     }

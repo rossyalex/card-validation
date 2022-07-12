@@ -60,12 +60,7 @@ header h1{
 
 }
 
-section h2, section p, section h4 {
-    text-align: center;
-}
-
-section h3 {
-
+section h2, section p, section h4, section h3 {
     text-align: center;
 }
 

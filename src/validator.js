@@ -1,14 +1,14 @@
 const validator = {
 
   isValid: (creditCard) => {
-    let creditArray = creditCard.split('').map(x => +x);
+    let creditArray = creditCard.split('').reverse().map(x => +x);
     creditArray = validator.multiplyTwo(creditArray);
     return validator.sumLuhn(creditArray);
   },
 
   multiplyTwo: (creditArray) => {
     return creditArray.map((item, i) => {
-      if (i % 2 === 0) {
+      if (i % 2 !== 0) {
         let value = item * 2;
         if (value > 9) {
           let sum = 0;
