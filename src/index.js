@@ -28,7 +28,7 @@ buyBtn.addEventListener('click', buy);
 backBtn.addEventListener('click', back);
 finalizeBtn.addEventListener('click', finalize);
 payBtn.addEventListener('click', pay);
-creditCardNumber.addEventListener('blur', validateCard);
+creditCardNumber.addEventListener('blur', validateCard); 
 toggleCreditCard.addEventListener('click', toggleCredit);
 creditCardNumber.addEventListener('input', cardReplace);
 

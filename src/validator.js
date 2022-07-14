@@ -7,11 +7,11 @@ const validator = {
   },
 
   multiplyTwo: (creditArray) => {
-    return creditArray.map((item, i) => {
+    return creditArray.map((item, i) => { // El .map altera su propio arreglo
       if (i % 2 !== 0) {
         let value = item * 2;
         if (value > 9) {
-          let sum = 0;
+          let sum = 0;  
           while (value) {
             sum = sum + value % 10;
             value = Math.floor(value / 10);
