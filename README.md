@@ -14,7 +14,7 @@
 ## 1. Proyecto
 Esta aplicación web fue creada para permitir a los usuarios registrar sus datos y su
 tarjeta de crédito, de este modo validar dicha tarjeta para comprar de manera sencilla
-y rápida la mejor proteína.
+y rápida la mejor proteína. Dale click para ver el proyecto:[card-validation] https://rossyalex.github.io/card-validation/
 
 ## 2. Imagen final
 ![card1](assets/card1.png)
